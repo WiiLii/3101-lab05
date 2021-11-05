@@ -19,10 +19,11 @@ namespace ICT3101_Calculator.UnitTests.Selenium_Tests
             FirefoxOptions option = new FirefoxOptions();
             option.AddArgument("--headless");
 
-            //for headless
-            _driver = new FirefoxDriver(@"C:\Users\Willie\Downloads\geckodriver-v0.30.0-win64", option);
+            //for headless local
+            //_driver = new FirefoxDriver(@"C:\Users\Willie\Downloads\geckodriver-v0.30.0-win64", option);
 
-            //_driver = new FirefoxDriver(option);
+            //for headless travis
+            _driver = new FirefoxDriver(option);
         }
         [Test]
         public void GoogleSubtract_WhenSubracting2from6_ResultEquals4()

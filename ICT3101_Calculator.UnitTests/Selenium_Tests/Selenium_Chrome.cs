@@ -20,9 +20,10 @@ namespace ICT3101_Calculator.UnitTests.Selenium_Tests
             ChromeOptions option = new ChromeOptions();
             option.AddArgument("--headless");
 
-            _driver = new ChromeDriver(@"C:\Users\Willie\Downloads\chromedriver_win32", option);
-
-            //_driver = new ChromeDriver(option);
+            //for headless local
+            //_driver = new ChromeDriver(@"C:\Users\Willie\Downloads\chromedriver_win32", option);
+            //for headless travis
+            _driver = new ChromeDriver(option);
         }
         [Test]
         public void GoogleAdd_WhenAdding2and2_ResultEquals4()
