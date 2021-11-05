@@ -22,7 +22,7 @@ namespace ICT3101_Calculator.UnitTests.Selenium_Tests
 
             _driver = new ChromeDriver(@"C:\Users\Willie\Downloads\chromedriver_win32", option);
 
-            _driver = new ChromeDriver(option);
+            //_driver = new ChromeDriver(option);
         }
         [Test]
         public void GoogleAdd_WhenAdding2and2_ResultEquals4()

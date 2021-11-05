@@ -16,13 +16,13 @@ namespace ICT3101_Calculator.UnitTests.Selenium_Tests
             // Setup local Selenium WebDriver
             //_driver = new FirefoxDriver(@"C:\Users\Willie\Downloads\geckodriver-v0.30.0-win64");
 
-             FirefoxOptions option = new FirefoxOptions();
+            FirefoxOptions option = new FirefoxOptions();
             option.AddArgument("--headless");
 
             //for headless
             _driver = new FirefoxDriver(@"C:\Users\Willie\Downloads\geckodriver-v0.30.0-win64", option);
 
-            _driver = new FirefoxDriver(option);
+            //_driver = new FirefoxDriver(option);
         }
         [Test]
         public void GoogleSubtract_WhenSubracting2from6_ResultEquals4()
